@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import Counter from "./components/counter/Counter";
+import Todo from "./components/todo/Todo";
+import './css/bulma.min.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <div className="">
+            {/* <Counter/> */}
+            <Todo/>
+        </div>
     </div>
   );
 }
+
+//Just call LearningComponents to use this.
+// class LearningComponents extends React.Component {
+//   render() {
+//     return (
+//       <div className="learningComponents">
+//       <header className="App-header">
+//         <p>
+//           Welcome to the homepage, <b>WOOHOO!</b>
+//         </p>
+//       </header>
+//     </div>
+//     )
+//   }
+// }
 
 export default App;
